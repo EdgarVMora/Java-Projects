@@ -6,8 +6,8 @@ Este repositorio contiene proyectos básicos desarrollados en Java. Cada proyect
 
 1. [Simulador de Televisión](simulatorTv/README.md)
    - Simula el comportamiento de una televisión con funcionalidades básicas.
-2. [Calculadora](proyecto2/README.md)
-   - Implementa una calculadora con operaciones básicas y avanzadas.
+2. [Simulador de una Cuenta de Banco](simulatorBankAccount/README.md)
+   - Implementa una cuenta de banco en la que puedas ver titular, numero y cantidad. En dicha cuenta puedes depositar y retirar dinero.
 ---
 
 ## Cómo Usar Este Repositorio
@@ -16,3 +16,4 @@ Este repositorio contiene proyectos básicos desarrollados en Java. Cada proyect
    ```bash
    git clone https://github.com/tu-usuario/javaProjects.git
    cd javaProjects
+   ```
