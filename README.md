@@ -10,6 +10,19 @@ Este repositorio contiene proyectos básicos desarrollados en Java. Cada proyect
    - Implementa una cuenta de banco en la que puedas ver titular, numero y cantidad. En dicha cuenta puedes depositar y retirar dinero.
 3. [Simulador de Cafetera](simulatorCoffeeMaker/README.md)
    - Simula el comportortamiento de una cafetera, en donde puedes ver su cantidad maxima y cantidad actual, asi como la opcion de servir tazas de cafe y vacial la cafetera.
+4. [Simulador de Cuenta Netflix](simulatorNetflix/README.md)
+   - Simula la activación y uso de una cuenta de Netflix mediante una tarjeta de regalo.
+5. [Simulador de Fracciones](simulatorFraction/README.md)
+   - Permite realizar operaciones básicas con fracciones, como suma, resta, multiplicación y división.
+6. [Simulador de Números Complejos](simulatorComplexNumbers/README.md)
+   - Permite realizar operaciones matemáticas con números complejos, como suma, resta, multiplicación y conjugado.
+7. [Sistema de Registro Veterinario](veterinaryRegistration/README.md)
+   - Gestiona la información de perros y sus propietarios, incluyendo la edad del perro y los datos del propietario.
+8. [Triángulo con Agregación](triangleFigure/README.md)
+   - Representa un triángulo en un plano cartesiano utilizando agregación para organizar las relaciones entre puntos y rectas.
+9. [Gestión de Fechas](findDate/README.md)
+   - Permite realizar operaciones con fechas, como avanzar o retroceder un día, y verificar si un año es bisiesto.
+
 ---
 
 ## Cómo Usar Este Repositorio

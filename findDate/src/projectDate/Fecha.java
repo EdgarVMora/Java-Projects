@@ -26,7 +26,7 @@ public class Fecha {
         if (anio >= 1900 && anio <= 2050) {
             this.anio = anio;
         } else {
-            System.out.println("Año fuera de rango. Se mantiene el año actual.");
+            System.out.println("Año fuera de rango.");
         }
     }
 
