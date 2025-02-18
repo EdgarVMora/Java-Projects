@@ -2,8 +2,7 @@ package projectVeterinary;
 import java.util.Scanner;
 
 public class Main {
-    //nemotecnia con las letras p, s, v, m, s, a
-    //poblado sigue velozmente mientras se abrazan
+   
 
     public static void main(String[] args) {
        Scanner scanner = new Scanner(System.in);

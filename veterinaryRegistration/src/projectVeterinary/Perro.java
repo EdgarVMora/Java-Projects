@@ -97,17 +97,9 @@ class Perro {
 
     // Método toString
     public String toString() {
-        return "🐶 Perro: " + nombre + "\nRaza: " + raza + "\nColor: " + color + 
+        return " Perro: " + nombre + "\nRaza: " + raza + "\nColor: " + color + 
                "\nFecha de Nacimiento: " + fechaNacimiento.toString() + 
                (propietario != null ? "\n" + propietario.toString() : "\nSin propietario registrado.");
     }
-    /*
-     operador ternario es lo mismo que un conditional if
-        (propietario != null ? "\n" + propietario.toString() : "\nSin propietario registrado.");
-        if (propietario != null) {
-            return "\n" + propietario.toString();
-        } else {
-            return "\nSin propietario registrado.";
-        }
-     */
+
 }
