@@ -22,7 +22,10 @@ Este repositorio contiene proyectos básicos desarrollados en Java. Cada proyect
    - Representa un triángulo en un plano cartesiano utilizando agregación para organizar las relaciones entre puntos y rectas.
 9. [Gestión de Fechas](findDate/README.md)
    - Permite realizar operaciones con fechas, como avanzar o retroceder un día, y verificar si un año es bisiesto.
-
+10. [PreExamen](preExamen/README.md)
+    - Consiste en una simulación de la plataforma Uber donde almacenas viajes y puedes ver las ganancias totales de un día en específico.
+11. [Paralelepípedo](parallelepiped/README.md)
+    - Permite calcular el volumen y el área superficial de un paralelepípedo dado sus dimensiones.
 ---
 
 ## Cómo Usar Este Repositorio
