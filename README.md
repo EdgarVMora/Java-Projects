@@ -26,6 +26,8 @@ Este repositorio contiene proyectos básicos desarrollados en Java. Cada proyect
     - Consiste en una simulación de la plataforma Uber donde almacenas viajes y puedes ver las ganancias totales de un día en específico.
 11. [Paralelepípedo](parallelepiped/README.md)
     - Permite calcular el volumen y el área superficial de un paralelepípedo dado sus dimensiones.
+12. [Gestion de libros](bookWithAuthor/README.md)
+    - Este proyecto implementa un sistema de gestión de biblioteca que permite administrar libros y sus autores, estableciendo relaciones bidireccionales entre ellos.
 ---
 
 ## Cómo Usar Este Repositorio
