@@ -16,19 +16,19 @@ public class Libro {
         this.autores = new ArrayList<>();
     }
 
-    public void asignarAutor(Autor autor) {
-        if (!autores.contains(autor)) { 
-            autores.add(autor);
-            autor.asignarLibro(this); 
-        }
-    }
-
     public String getTitulo() {
         return titulo;
     }
 
     public List<Autor> getAutores() {
         return autores;
+    }
+
+    public void asignarAutor(Autor autor) {
+        if (!autores.contains(autor)) { 
+            autores.add(autor);
+            autor.asignarLibro(this); 
+        }
     }
 
     @Override

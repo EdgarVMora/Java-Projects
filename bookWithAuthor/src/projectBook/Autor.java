@@ -16,17 +16,17 @@ public class Autor {
         this.libros = new ArrayList<>();
     }
 
+
+    public String getNombre() {
+        return nombre;
+    }
+
     public void asignarLibro(Libro libro) {
         if (!libros.contains(libro)) { 
             libros.add(libro);
             libro.asignarAutor(this); 
         }
     }
-
-    public String getNombre() {
-        return nombre;
-    }
-    
 
     @Override
     public String toString() {

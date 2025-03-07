@@ -1,11 +1,12 @@
 package projectNetflix;
+//Clase Netflix que simula el uso de un plan de Netflix
 public class Netflix {
     private String usuario;
     private boolean activo;
     private String plan;
     private int duracion;
 
-
+    //Constructor de la clase Netflix
     public Netflix(String usuario) {
         this.usuario = usuario;
         this.activo = false;
@@ -13,6 +14,27 @@ public class Netflix {
         this.duracion = 0;
     }
 
+    public String getUsuario() {
+        return usuario;
+    }
+
+    public boolean isActivo() {
+        return activo;  
+    }
+
+    public String getPlan() {
+        return plan;
+    }
+
+    public int getDuracion() {
+        return duracion;
+    }
+
+    public void setDuracion(int duracion) {
+        this.duracion = duracion;
+    }
+
+    //Metodo para activar un plan de Netflix
     public void activarPlan(TarjetaRegalo tarjeta, String codigoIngresado) {
         if (tarjeta.getCodigoActivacion().equals(codigoIngresado)) {
             this.plan = tarjeta.getPlan();
@@ -45,5 +67,7 @@ public class Netflix {
                (activo ? ("Plan: " + plan + "\nDuración restante: " + duracion + " días") : "");
     }
 }
+
+
 
 

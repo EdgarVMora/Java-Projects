@@ -5,12 +5,14 @@ public class Fecha {
     private int mes;
     private int anio;
 
+    //Constructor de la clase Fecha
     public Fecha() {
         this.dia = 1;
         this.mes = 1;
         this.anio = 1900;
     }
 
+    //Constructor de la clase Fecha
     public Fecha(int dia, int mes, int anio) {
         this.dia = dia;
         this.mes = mes;

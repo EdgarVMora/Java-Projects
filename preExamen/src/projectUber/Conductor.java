@@ -7,6 +7,7 @@ public class Conductor {
     private String nombre;
     private Viaje[] viajes;
 
+    //Constructor de la clase Conductor
     public Conductor(int id, String nombre, int numViajes) {
         this.id = id;
         this.nombre = nombre;
@@ -26,7 +27,9 @@ public class Conductor {
             int anio = scanner.nextInt();
 
             Fecha fecha = new Fecha(dia, mes, anio);
-            viajes[i] = new Viaje(distancia, tarifa, fecha);
+            //Se crea un nuevo viaje con los datos ingresados   
+            this.viajes[i] = new Viaje(distancia, tarifa, fecha); 
+            //Se agrega el viaje al array de viajes 
         }
     }
 
