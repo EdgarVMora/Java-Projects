@@ -19,7 +19,7 @@ ClassB y = x;  // Error de compilación
 ### Código corregido
 ```java
 ClassA x = new ClassB();
-ClassB y = (ClassB) x;  // Downcasting explícito
+ClassB y = (ClassB) x; 
 ```
 
 ### Respuesta
@@ -48,7 +48,7 @@ Al ejecutar este código, observaremos que se imprime "Bar" y no "Goo". Esto ocu
 ## Ejercicio 5: Análisis de Métodos Disponibles
 ### Respuesta
 Un objeto de la clase Goo tiene acceso a los siguientes métodos:
-- method() heredado de la jerarquía Foo/Bar
+- method() heredado de la jerarquía Foo/Bar //corregir
 - method(String message) definido en la propia clase Goo
 
 ## Ejercicio 6: Clasificación de Métodos
