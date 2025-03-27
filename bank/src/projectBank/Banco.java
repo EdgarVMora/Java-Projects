@@ -35,37 +35,66 @@ public class Banco {
     }
 
     private static void crearCuenta() {
-        System.out.println("Seleccione el tipo de cuenta:");
-        System.out.println("a. Cuenta Ahorros");
-        System.out.println("b. Cuenta Corriente");
-        char tipo = scanner.next().charAt(0);
-
-        System.out.print("Ingrese el numero de cuenta: ");
+        System.out.print("Ingrese el número de cuenta: ");
         int noCuenta = scanner.nextInt();
-
+        
+        if (buscarCuenta(noCuenta) != null) {
+            System.out.println("Error: Ya existe una cuenta con ese número.");
+            return;
+        }
+        
+        System.out.print("Ingrese el monto del depósito inicial (mínimo 100): ");
+        double depositoInicial = scanner.nextDouble();
+        
+        if (depositoInicial < 100) {
+            System.out.println("Error: El depósito inicial debe ser al menos 100.");
+            return;
+        }
+        
+        System.out.println("\nTipo de cuenta:");
+        System.out.println("1. Cuenta de Ahorro");
+        System.out.println("2. Cuenta Corriente");
+        System.out.print("Seleccione el tipo de cuenta (1-2): ");
+        int tipo = scanner.nextInt();
+        
+        Cuenta nuevaCuenta;
+        
         switch (tipo) {
-            case 'a':
-                System.out.print("Ingrese el porcentaje de interes: ");
+            case 1:
+                System.out.print("Ingrese la tasa de interés (%): ");
                 double interes = scanner.nextDouble();
-                cuentas.add(new CuentaAhorro(noCuenta, interes));
-                System.out.println("Cuenta de Ahorro creada exitosamente.");
+                nuevaCuenta = new CuentaAhorro(noCuenta, interes);
                 break;
-            case 'b':
-                System.out.print("Ingrese el limite de sobregiro: ");
-                double sobregiro = scanner.nextDouble();
-                cuentas.add(new CuentaCorriente(noCuenta, sobregiro));
-                System.out.println("Cuenta Corriente creada exitosamente.");
+            case 2:
+                System.out.print("Ingrese el límite de sobregiro: ");
+                double limiteSobregiro = scanner.nextDouble();
+                nuevaCuenta = new CuentaCorriente(noCuenta, limiteSobregiro);
                 break;
             default:
-                System.out.println("Opcion no valida.");
+                System.out.println("Opción no válida");
+                return;
         }
+        
+        nuevaCuenta.depositar(depositoInicial);
+        cuentas.add(nuevaCuenta);
+        
+        System.out.println("\nCuenta creada exitosamente");
+        System.out.println("Número de cuenta: " + noCuenta);
+        System.out.println("Saldo inicial: $" + depositoInicial);
     }
 
     private static void eliminarCuenta() {
         System.out.print("Ingrese el numero de cuenta a eliminar: ");
         int noCuenta = scanner.nextInt();
-        cuentas.removeIf(c -> c.getNoCuenta() == noCuenta);
-        System.out.println("Cuenta eliminada (si existía).");
+        
+        Cuenta cuentaAEliminar = buscarCuenta(noCuenta);
+        
+        if (cuentaAEliminar != null) {
+            cuentas.remove(cuentaAEliminar);
+            System.out.println("Cuenta eliminada exitosamente.");
+        } else {
+            System.out.println("No se encontró una cuenta con ese número.");
+        }
     }
 
     private static void depositar() {

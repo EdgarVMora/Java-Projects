@@ -27,6 +27,10 @@ public class Cuenta
     public double getBalance(){
 		return balance;
     }
+
+    public void setBalance(double balance){
+        this.balance = balance;
+    }
     
     public int getNoCuenta(){
 		return noCuenta;

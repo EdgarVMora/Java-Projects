@@ -15,7 +15,7 @@ public class CuentaCorriente extends Cuenta {
         } else if (getBalance() - suma >= -limiteSobregiro) {
             super.retirar(suma);
             if (getBalance() < 0) {
-                System.out.println("⚠️ La cuenta está en sobregiro.");
+                System.out.println("La cuenta está en sobregiro.");
             }
         } else {
             System.err.println("Retiro no permitido: sobrepasa el limite de sobregiro.");
