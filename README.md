@@ -28,6 +28,10 @@ Este repositorio contiene proyectos básicos desarrollados en Java. Cada proyect
     - Permite calcular el volumen y el área superficial de un paralelepípedo dado sus dimensiones.
 12. [Gestion de libros](bookWithAuthor/README.md)
     - Este proyecto implementa un sistema de gestión de biblioteca que permite administrar libros y sus autores, estableciendo relaciones bidireccionales entre ellos.
+13. [Simulador de termometro](thermometerSimulator/README.md)
+    - Implementacion de un sistema de medicion de temperatura que soporta escalas Celsius y Farhenheit.
+14. [Banco](bank/README.md)
+    - Implementa un simulador de una cuenta de banco, donde puedes tener una cuenta de ahorro o una cuenta corriente, en la cual puedes depositar o retirar 
 ---
 
 ## Cómo Usar Este Repositorio
