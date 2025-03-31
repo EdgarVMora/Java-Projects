@@ -1,5 +1,4 @@
 package projectBank;
-
 public class CuentaAhorro extends Cuenta {
     private double interes; 
     private int retirosEsteMes;
