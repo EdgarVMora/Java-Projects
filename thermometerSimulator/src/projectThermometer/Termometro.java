@@ -9,7 +9,7 @@ public abstract class Termometro implements Temperatura, Estadistica {
     protected double[] memoria = new double[TAMANIO_MEMORIA];
     protected int n = 0;
     protected List<Double> temperaturas;
-
+        
     
     public Termometro(double grados) {
         this.grados = grados;
@@ -68,20 +68,28 @@ public abstract class Termometro implements Temperatura, Estadistica {
         if (temperaturas.isEmpty()) {
             return Double.NaN;
         }
-        return temperaturas.stream()
-                .mapToDouble(Double::doubleValue)
-                .min()
-                .getAsDouble();
+        
+        double min = temperaturas.get(0);
+        for (Double temp : temperaturas) {
+            if (temp < min) {
+                min = temp;
+            }
+        }
+        return min;
     }
 
     public double maximo() {
         if (temperaturas.isEmpty()) {
             return Double.NaN;
         }
-        return temperaturas.stream()
-                .mapToDouble(Double::doubleValue)
-                .max()
-                .getAsDouble();
+        
+        double max = temperaturas.get(0);
+        for (Double temp : temperaturas) {
+            if (temp > max) {
+                max = temp;
+            }
+        }
+        return max;
     }
 
     
