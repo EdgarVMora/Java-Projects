@@ -31,7 +31,9 @@ Este repositorio contiene proyectos básicos desarrollados en Java. Cada proyect
 13. [Simulador de termometro](thermometerSimulator/README.md)
     - Implementacion de un sistema de medicion de temperatura que soporta escalas Celsius y Farhenheit.
 14. [Banco](bank/README.md)
-    - Implementa un simulador de una cuenta de banco, donde puedes tener una cuenta de ahorro o una cuenta corriente, en la cual puedes depositar o retirar 
+    - Implementa un simulador de una cuenta de banco, donde puedes tener una cuenta de ahorro o una cuenta corriente, en la cual puedes depositar o retirar
+15. [pre Examen](preExamTwo/README.md)
+    - Revision del examen para el segundo parcial
 ---
 
 ## Cómo Usar Este Repositorio
