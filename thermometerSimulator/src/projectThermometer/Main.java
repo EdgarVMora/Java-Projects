@@ -18,6 +18,11 @@ public class Main {
         } else {
             termometro = new TermometroCelsius(temperatura);
         }
+        /*
+         * Termometro termometro2 = new TermometroCelsius(temperatura);
+        Termometro termometro3 = new TermometroFahrenheit(temperatura);
+         */
+        
 
         int menu;
         do {

@@ -99,4 +99,5 @@ public abstract class Termometro implements Temperatura, Estadistica {
     }
 
     public abstract String determinarTemperatura();
+
 }
