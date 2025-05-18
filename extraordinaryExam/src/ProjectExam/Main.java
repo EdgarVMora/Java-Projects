@@ -45,7 +45,7 @@ public class Main {
          if (!listaDeEmpleados.isEmpty()) {
              Empleado primerEmpleado = listaDeEmpleados.get(0);
              System.out.println(primerEmpleado); // Llama al toString() del empleado
-             System.out.println("Salario del primer empleado: " + primerEmpleado.calcularSalario());
+             System.out.println("Salario del primer empleado: " + primerEmpleado.calcularSalario() + primerEmpleado.getId());
          }
  
          System.out.println("\n--- Información de todos los empleados (iterando) ---");
